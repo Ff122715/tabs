@@ -7,18 +7,20 @@ img {
     width: 120px;
     height: 120px;
 }
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
+[draggable] {
+    cursor: grab;
 }
-.animal {
+.container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
+.piece {
     width: 120px;
     height: 120px;
-    padding: 20px;
-    background-color: rgb(245, 245, 253);
-    border: 2px solid rgb(212, 212, 223);
+    border: 5px solid rgb(212, 212, 223);
 }
 #text {
     margin-top: 30px;
@@ -26,20 +28,15 @@ img {
     font-size: 18px;
 }
 .cells {
+    width: fit-content;
+    margin: 0 auto;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    gap: 40px;
-    justify-items: center;
 }
 .cell {
     width: 120px;
     height: 120px;
-    padding: 20px;
-    background-color: rgb(253, 253, 176);
-    border: 2px solid rgb(255, 244, 145);
-}
-.good {
-    background-color: rgb(201, 255, 147);
+    border: 1px solid rgb(196, 196, 196);
 }

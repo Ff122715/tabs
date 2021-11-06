@@ -1,0 +1,48 @@
+.main {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+img {
+    width: 120px;
+    height: 120px;
+}
+[draggable] {
+    cursor: grab;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+.animal {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    background-color: rgb(245, 245, 253);
+    border: 2px solid rgb(212, 212, 223);
+}
+#text {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.cells {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    justify-items: center;
+}
+.cell {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    background-color: rgb(253, 253, 176);
+    border: 2px solid rgb(255, 244, 145);
+}
+.good {
+    background-color: rgb(201, 255, 147);
+}
