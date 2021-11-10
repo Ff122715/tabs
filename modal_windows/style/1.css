@@ -1,0 +1,86 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards {
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgba(177, 213, 255, 0.11);
+}
+.card > img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px rgb(177, 177, 177) solid;
+    width: 300px;
+    background-color: white;
+}
+.c2 {
+    padding: 20px;
+}
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    display: flex;
+}
+.hide {
+    display: none;
+}
+.modal-active {
+    display: flex;
+}
+.card-modal {
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+}
+.card-modal-left > img {
+    width: 400px;
+    height: 300px;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+button {
+    margin-top: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-delete {
+    background-color: white;
+    border: 2px solid rgb(255, 119, 119);
+    color: rgb(255, 119, 119);
+}
+.btn-info {
+    background-color: rgb(95, 127, 224);
+    border: 2px solid rgb(95, 127, 224);
+    color: white;
+}
